@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
     import doctorImage from '../assets/doctor.jpg';
+    import image1 from '../assets/image1.jpg';
+    import image2 from '../assets/image2.jpg';
 
     function Hero() {
       const [isPhotoExpanded, setIsPhotoExpanded] = useState(false);
       const photoRef = useRef(null);
       const startYear = 2018;
       const [shake, setShake] = useState(false);
+      const [currentSlide, setCurrentSlide] = useState(0);
+      const slides = [image1, image2];
 
       const calculateExperience = () => {
         const currentYear = new Date().getFullYear();
@@ -39,8 +43,35 @@ import React, { useState, useEffect, useRef } from 'react';
         return () => clearInterval(intervalId);
       }, []);
 
+      useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+        }, 5000);
+        return () => clearInterval(interval);
+      }, [slides.length]);
+
       return (
         <section className="hero">
+          <div className="slideshow-container" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }}>
+            {slides.map((slide, index) => (
+              <img
+                key={index}
+                src={slide}
+                alt={`Slide ${index + 1}`}
+                className={`slide ${index === currentSlide ? 'active' : ''}`}
+                style={{
+                  display: index === currentSlide ? 'block' : 'none',
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  animation: 'fadeIn 0.5s ease',
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                }}
+              />
+            ))}
+          </div>
           <div className="container">
             <button style={{ right: '20px', left: 'auto', bottom: '20px', top: 'auto' }} className={shake ? 'shake' : ''}>Book an Appointment</button>
             <div className="doctor-info">
