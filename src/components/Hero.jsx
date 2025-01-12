@@ -56,8 +56,8 @@ import React, { useState, useEffect, useRef } from 'react';
                 <div className="experience-flag">
                   <span>{calculateExperience()}+ Years of Experience</span>
                 </div>
-                <p>BDS (Manipal), MDS (Oral & Maxillofacial Surgery)</p>
-                <p>Dip. Laser (Auchen, Germany), Certified Implantologist (Hyderabad)</p>
+                <p>BDS (Awadh Dental College), Dip . In Implantology (Bangalore),</p>
+                <p>Certified Leaser Specialist, Ex Junior Dental Resident (NBMC&H)</p>
               </div>
             </div>
           </div>
