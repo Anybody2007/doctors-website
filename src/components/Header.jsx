@@ -4,11 +4,11 @@ import React from 'react';
       return (
         <header className="header">
           <div className="container">
-            <h1>Doctor's Name</h1>
+            <h1>Dr. Soubhik Dey</h1>
             <nav>
               <a href="#">Home</a>
               <a href="#">About</a>
-              <a href="#">Services</a>
+              <a href="#">Treatments</a>
               <a href="#">Contact</a>
             </nav>
           </div>

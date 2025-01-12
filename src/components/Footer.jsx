@@ -4,7 +4,7 @@ import React from 'react';
       return (
         <footer className="footer">
           <div className="container">
-            <p>&copy; {new Date().getFullYear()} Doctor's Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Dr. Soubhik Dey. All rights reserved.</p>
           </div>
         </footer>
       );

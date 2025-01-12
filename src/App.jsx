@@ -1,7 +1,8 @@
 import React from 'react';
     import Header from './components/Header';
     import Hero from './components/Hero';
-    import Services from './components/Services';
+    import AboutDoctorSection from './components/AboutDoctorSection';
+    import Treatments from './components/Treatments';
     import Testimonials from './components/Testimonials';
     import Footer from './components/Footer';
 
@@ -10,7 +11,8 @@ import React from 'react';
         <div>
           <Header />
           <Hero />
-          <Services />
+          <AboutDoctorSection />
+          <Treatments />
           <Testimonials />
           <Footer />
         </div>
