@@ -4,9 +4,11 @@ import React from 'react';
       return (
         <section className="about-doctor-section">
           <div className="container">
-            <h3>About Dr. Soubhik Dey</h3>
-            <p>Dental problems such as infections and inflammation are associated with more than 6 chronic diseases like pregnancy complications, clogged arteries, and heart diseases. This is why it is pivotal to take care of your dental health and live a complication-free lifestyle. Dr. Soubhik Dey is a well-known dentist in Birpara who can solve all your dental issues and give you a good-looking smile.</p>
-            <p>With advanced dentistry facilities and technology, your doctor aims to offer the best dental treatments at reasonable prices. Dr. Dey also has experience in performing maxillofacial and other complex cosmetic and trauma surgeries for all-inclusive dental care.</p>
+            <h3>Meet Dr. Soubhik Dey</h3>
+            <h4>Your Trusted Dental Surgeon in Birpara & Siliguri</h4>
+            <p>Did you know that dental problems, like infections and inflammation, can lead to serious health issues such as heart diseases, clogged arteries, and even pregnancy complications? Research highlights the importance of good dental health for a healthy lifestyle.</p>
+            <p>Dr. Soubhik Dey is a renowned dental surgeon in Birpara and Siliguri, committed to providing expert care for all your dental needs. With his advanced dentistry facilities and state-of-the-art technology, he ensures high-quality treatments at affordable prices.</p>
+            <p>Whether you need dental implants, laser surgeries, or cosmetic corrections, Dr. Dey offers specialized care to help you achieve a healthy and confident smile. Prioritize your dental health today with Dr. Soubhik Dey’s comprehensive and reliable dental solutions!</p>
           </div>
         </section>
       );

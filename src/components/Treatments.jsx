@@ -1,4 +1,13 @@
 import React, { useState } from 'react';
+    import cosmetic from '../assets/cosmetic.svg';
+    import crown from '../assets/crown.svg';
+    import dentures from '../assets/dentures.svg';
+    import extraction from '../assets/extraction.svg';
+    import fillings from '../assets/fillings.svg';
+    import implant from '../assets/implant.svg';
+    import laser from '../assets/laser.svg';
+    import smile from '../assets/smile.svg';
+    import rootcanal from '../assets/rootcanal.svg';
 
     function Treatments() {
       const [expandedTreatment, setExpandedTreatment] = useState(null);
@@ -6,6 +15,7 @@ import React, { useState } from 'react';
       const treatments = [
         {
           name: "Cosmetic Procedures",
+          logo: cosmetic,
           details: {
             when: "When you want to improve the appearance of your teeth and gums.",
             benefits: "Enhances smile aesthetics, boosts confidence.",
@@ -14,6 +24,7 @@ import React, { useState } from 'react';
         },
         {
           name: "Crowns and Bridges Fixing",
+          logo: crown,
           details: {
             when: "When you have damaged or missing teeth.",
             benefits: "Restores tooth function and appearance.",
@@ -22,6 +33,7 @@ import React, { useState } from 'react';
         },
         {
           name: "Complete/Partial Dentures Fixing",
+          logo: dentures,
           details: {
             when: "When you have multiple missing teeth.",
             benefits: "Restores chewing ability and speech.",
@@ -30,6 +42,7 @@ import React, { useState } from 'react';
         },
         {
           name: "Tooth Extraction",
+          logo: extraction,
           details: {
             when: "When a tooth is severely damaged or infected.",
             benefits: "Relieves pain and prevents further infection.",
@@ -38,6 +51,7 @@ import React, { useState } from 'react';
         },
         {
           name: "Dental Fillings",
+          logo: fillings,
           details: {
             when: "When you have cavities or minor tooth damage.",
             benefits: "Restores tooth structure and prevents decay.",
@@ -46,6 +60,7 @@ import React, { useState } from 'react';
         },
          {
           name: "Dental Implant Fixing",
+          logo: implant,
           details: {
             when: "When you have missing teeth and sufficient bone density.",
             benefits: "Provides a permanent solution for missing teeth.",
@@ -54,6 +69,7 @@ import React, { useState } from 'react';
         },
         {
           name: "Laser Surgery",
+          logo: laser,
           details: {
             when: "For various gum and soft tissue procedures.",
             benefits: "Minimally invasive with faster healing.",
@@ -62,6 +78,7 @@ import React, { useState } from 'react';
         },
         {
           name: "Smile Design",
+          logo: smile,
           details: {
             when: "When you want a complete smile makeover.",
             benefits: "Customized treatment plan for a perfect smile.",
@@ -70,6 +87,7 @@ import React, { useState } from 'react';
         },
         {
           name: "Single Sitting Root Canal",
+          logo: rootcanal,
           details: {
             when: "When a tooth's pulp is infected.",
             benefits: "Saves the tooth and relieves pain in a single visit.",
@@ -89,10 +107,9 @@ import React, { useState } from 'react';
             <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
               {treatments.map((treatment, index) => (
                 <div key={index} className="treatment-card" onMouseEnter={() => setExpandedTreatment(index)} onMouseLeave={() => setExpandedTreatment(null)}>
-                  <h3>
-                    {treatment.name}
+                  <h3 onClick={() => toggleTreatment(index)}>
+                    <img src={treatment.logo} alt={treatment.name} style={{width: '120px', height: '120px', marginRight: '5px'}}/> {treatment.name}
                     <span
-                      onClick={() => toggleTreatment(index)}
                       className={expandedTreatment === index ? 'rotate' : ''}
                     >
                       &#8595;

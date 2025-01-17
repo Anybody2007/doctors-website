@@ -5,6 +5,7 @@ import React from 'react';
     import Treatments from './components/Treatments';
     import Testimonials from './components/Testimonials';
     import Footer from './components/Footer';
+    import AffordableCareSection from './components/AffordableCareSection';
 
     function App() {
       return (
@@ -13,6 +14,7 @@ import React from 'react';
           <Hero />
           <AboutDoctorSection />
           <Treatments />
+          <AffordableCareSection />
           <Testimonials />
           <Footer />
         </div>

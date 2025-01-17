@@ -2,6 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
     import doctorImage from '../assets/doctor.jpg';
     import image1 from '../assets/image1.jpg';
     import image2 from '../assets/image2.jpg';
+    import image3 from '../assets/image3.jpg';
+    import image4 from '../assets/image4.jpg';
+    import image5 from '../assets/image5.jpg';
+    import image6 from '../assets/image6.jpg';
+    import image7 from '../assets/image7.jpg';
 
     function Hero() {
       const [isPhotoExpanded, setIsPhotoExpanded] = useState(false);
@@ -9,7 +14,7 @@ import React, { useState, useEffect, useRef } from 'react';
       const startYear = 2018;
       const [shake, setShake] = useState(false);
       const [currentSlide, setCurrentSlide] = useState(0);
-      const slides = [image1, image2];
+      const slides = [image1, image2, image3, image4, image5, image6, image7];
 
       const calculateExperience = () => {
         const currentYear = new Date().getFullYear();
