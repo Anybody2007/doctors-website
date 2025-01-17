@@ -94,10 +94,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent; /* Removed the white background */
   padding: 20px;
   border-radius: 10px;
 }
+
 
 .hero h2 {
   font-size: 3rem;
@@ -178,27 +179,14 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.doctor-photo-container.expanded {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
-  width: 200px;
-  height: 200px;
-  z-index: 1000;
-  border: 5px solid #fff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.doctor-photo-container.expanded img {
-  transform: scale(1.2);
 }
 
 .doctor-details {
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.6); /* Add a white background with slight transparency */
+  padding: 1rem; /* Add padding to create spacing */
+  border-radius: 8px; /* Optional: Add rounded corners for better aesthetics */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for emphasis */
 }
 
 .doctor-details h3 {
@@ -210,6 +198,19 @@ body {
 
 .doctor-details p {
   color: #555;
+  margin-bottom: 0.5rem;
+}
+
+
+.doctor-details h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.doctor-details p {
+  color: #333333;
   margin-bottom: 0.5rem;
 }
 
@@ -236,7 +237,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-size: 0.9rem;
-  color: #555;
+  color: #a92525;
   position: relative;
 }
 
