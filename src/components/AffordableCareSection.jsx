@@ -6,7 +6,7 @@ import smile4 from '../assets/smile/smile4.jpg';
 
 function AffordableCareSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [smile1, smile2, smile3, smile4];
+  const slides = [smile2, smile4, smile3, smile1];
   const slideRefs = useRef([]);
 
   useEffect(() => {

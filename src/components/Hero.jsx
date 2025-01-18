@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-    import doctorImage from '../assets/doctor.jpg';
-    import image1 from '../assets/image1.jpg';
-    import image2 from '../assets/image2.jpg';
-    import image3 from '../assets/image3.jpg';
-    import image4 from '../assets/image4.jpg';
-    import image5 from '../assets/image5.jpg';
-    import image6 from '../assets/image6.jpg';
-    import image7 from '../assets/image7.jpg';
+    import doctorImage from '../assets/hero/doctor.jpg';
+    import image1 from '../assets/hero/image1.jpg';
+    import image2 from '../assets/hero/image2.jpg';
+    import image3 from '../assets/hero/image3.jpg';
+    import image4 from '../assets/hero/image4.jpg';
+    import image5 from '../assets/hero/image5.jpg';
+    import image6 from '../assets/hero/image6.jpg';
+    import image7 from '../assets/hero/image7.jpg';
 
     function Hero() {
       const [isPhotoExpanded, setIsPhotoExpanded] = useState(false);

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-    import cosmetic from '../assets/cosmetic.svg';
-    import crown from '../assets/crown.svg';
-    import dentures from '../assets/dentures.svg';
-    import extraction from '../assets/extraction.svg';
-    import fillings from '../assets/fillings.svg';
-    import implant from '../assets/implant.svg';
-    import laser from '../assets/laser.svg';
-    import smile from '../assets/smile.svg';
-    import rootcanal from '../assets/rootcanal.svg';
+    import cosmetic from '../assets/treatments/cosmetic.svg';
+    import crown from '../assets/treatments/crown.svg';
+    import dentures from '../assets/treatments/dentures.svg';
+    import extraction from '../assets/treatments/extraction.svg';
+    import fillings from '../assets/treatments/fillings.svg';
+    import implant from '../assets/treatments/implant.svg';
+    import laser from '../assets/treatments/laser.svg';
+    import smile from '../assets/treatments/smile.svg';
+    import rootcanal from '../assets/treatments/rootcanal.svg';
 
     function Treatments() {
       const [expandedTreatment, setExpandedTreatment] = useState(null);
