@@ -5,8 +5,6 @@ import DentalCare from '../assets/quality/dental-care.svg';
 import SafeEnv from '../assets/quality/safe-dental-care-environment.svg';
 import WorldTech from '../assets/quality/world-class-technology.svg';
 
-import './QualityStandards.css';
-
 const QualityStandards = () => {
     const standards = [
       {
