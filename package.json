@@ -1,5 +1,5 @@
 {
-      "homepage": "http://anybody2007.github.io/doctors-website",
+      "homepage": "http://Anybody2007.github.io/doctors-website/",
       "name": "doctor-website-template",
       "private": true,
       "version": "0.0.0",
@@ -7,7 +7,7 @@
       "scripts": {
             "dev": "vite",
             "predeploy": "npm run build",
-            "deploy": "gh-pages -d build",
+            "deploy": "gh-pages -d dist",
             "build": "vite build",
             "preview": "vite preview"
       },

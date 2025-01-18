@@ -7,4 +7,5 @@ export default defineConfig({
     react(),
     svgr(), // Add the plugin here
   ],
+  base: "doctors-website",
 });
