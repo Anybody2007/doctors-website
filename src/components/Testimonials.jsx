@@ -9,7 +9,7 @@ import React from 'react';
           name: "Patient 1"
         },
         {
-          videoUrl: "https://www.youtube.com/embed/Z11R3Z3ZOEw",
+          videoUrl: "https://www.youtube.com/embed/EFXCOwOhclU",
           title: "Patient Testimonial | Gum, Swelling and Bleeding  | Best Dentist in Birpara & Siliguri - Dr. Dey",
           name: "Patient 2"
         },
