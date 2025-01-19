@@ -515,3 +515,54 @@ body {
     width: 100%;
   }
 }
+/* Add these to your existing CSS */
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-slide-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out, transform 10s linear;
+  transform-origin: center center;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  animation: kenBurns 10s ease-in-out forwards;
+}
+
+.hero-slide.next {
+  opacity: 1;
+  animation: fadeInSlide 1.5s ease-in-out forwards;
+}

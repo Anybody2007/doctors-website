@@ -1,0 +1,122 @@
+.appointment-dialog .MuiDialog-paper {
+    border-radius: 12px;
+  }
+  
+  .appointment-dialog .MuiDialogTitle-root {
+    background-color: #f5f5f5;
+    padding: 16px 24px;
+  }
+  
+  /* Updated DatePicker styles */
+  .date-picker {
+    width: 100%;
+    padding: 16.5px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  .date-picker:focus {
+    border-color: #1976d2;
+    outline: none;
+  }
+  
+  /* Calendar popup styles */
+  .react-datepicker {
+    font-family: inherit;
+    background-color: #fff !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .react-datepicker__header {
+    background-color: #f5f5f5 !important;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .react-datepicker__current-month {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .react-datepicker__day {
+    border-radius: 4px;
+  }
+  
+  .react-datepicker__day:hover {
+    background-color: #e6f3ff;
+  }
+  
+  .react-datepicker__day--selected {
+    background-color: #1976d2 !important;
+    color: white !important;
+  }
+  
+  .react-datepicker__day--keyboard-selected {
+    background-color: #1976d2 !important;
+    color: white !important;
+  }
+  
+  .react-datepicker__input-container {
+    display: block;
+    width: 100%;
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100%;
+    padding: 16.5px 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .react-datepicker__input-container input:focus {
+    border-color: #1976d2;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+  }
+  
+  .react-datepicker-popper {
+    z-index: 9999 !important;
+  }
+  
+  .react-tel-input .form-control {
+    width: 100% !important;
+    height: 56px !important;
+    font-size: 16px !important;
+  }
+  
+  .react-tel-input .form-control.error {
+    border-color: #d32f2f;
+  }
+  
+  .recaptcha-placeholder {
+    width: 100%;
+    height: 78px;
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 4px;
+  }
+  
+  .MuiButton-contained {
+    background-color: #1976d2 !important;
+    color: white !important;
+    padding: 8px 24px !important;
+  }
+  
+  .MuiButton-contained:hover {
+    background-color: #1565c0 !important;
+  }
+  
+  .MuiFormHelperText-root.Mui-error {
+    margin-left: 0;
+    margin-top: 4px;
+  }
