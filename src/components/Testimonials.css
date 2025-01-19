@@ -1,104 +1,57 @@
 .testimonials {
-    padding: 6rem 0;
-    background-color: #fff;
-  }
+  padding: 6rem 0;
+  background-color: #fff;
+}
 
-  .testimonials h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #2c3e50;
-    font-weight: 700;
-  }
+.testimonials h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
 
-  .testimonials .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
+.testimonials .container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
 
+.testimonial-card {
+  display: inline-block;
+  width: 80%;
+  margin-right: 20px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+}
+
+.testimonial-card:last-child {
+  margin-right: 0;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card iframe {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-card p {
+  text-align: right;
+  font-weight: bold;
+  color: #555;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
   .testimonial-card {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 45%;
   }
-
-  .testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .testimonial-card p:first-child {
-    font-style: italic;
-    margin-bottom: 1.5rem;
-    color: #444;
-    font-size: 1.1rem;
-  }
-
-  .testimonial-card p:last-child {
-    text-align: right;
-    font-weight: bold;
-    color: #555;
-    font-size: 1rem;
-  }
-
-  .slideshow-container {
-    position: relative;
-    max-width: 600px;
-    margin: 2rem auto;
-    overflow: hidden;
-  }
-
-  .slideshow-container .slide {
-    display: none;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    animation: fadeIn 0.5s ease;
-  }
-
-  .slideshow-container .slide.active {
-    display: block;
-  }
-
-  .slideshow-container .prev,
-  .slideshow-container .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .slideshow-container .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .slideshow-container .prev:hover,
-  .slideshow-container .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+}
