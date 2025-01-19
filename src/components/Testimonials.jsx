@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
     import './Testimonials.css';
 
     function Testimonials() {
@@ -20,11 +20,26 @@ import React from 'react';
         }
       ];
 
+      const containerRef = useRef(null);
+
+      const scrollLeft = () => {
+        if (containerRef.current) {
+          containerRef.current.scrollLeft -= containerRef.current.offsetWidth;
+        }
+      };
+
+      const scrollRight = () => {
+        if (containerRef.current) {
+          containerRef.current.scrollLeft += containerRef.current.offsetWidth;
+        }
+      };
+
       return (
         <section className="testimonials">
           <div className="container">
             <h2>Patient Testimonials</h2>
-            <div className="testimonials-container">
+            <button className="slide-button prev" onClick={scrollLeft}>&lt;</button>
+            <div className="testimonials-container" ref={containerRef}>
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="testimonial-card">
                   <iframe
@@ -42,6 +57,7 @@ import React from 'react';
                 </div>
               ))}
             </div>
+            <button className="slide-button next" onClick={scrollRight}>&gt;</button>
           </div>
         </section>
       );
